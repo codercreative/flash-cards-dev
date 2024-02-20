@@ -54,8 +54,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.card:hover,
-.card:active {
+.card:hover {
   transform: rotateY(180deg);
 }
 

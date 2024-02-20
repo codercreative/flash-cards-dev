@@ -24,7 +24,7 @@ nextQuestionBtn.addEventListener("click", () => {
   const { question, answer } = questions[randomIndex];
 
   const cardHTML = `
-  <div class="card">
+  <div class="card" id="card">
     <div class="front">
       <h2>${question}</h2>
     </div>
@@ -36,3 +36,5 @@ nextQuestionBtn.addEventListener("click", () => {
 
   cardContainer.innerHTML = cardHTML;
 });
+nextQuestionBtn.addEventListener("click", showNextQuestion);
+nextQuestionBtn.addEventListener("touchstart", showNextQuestion);
