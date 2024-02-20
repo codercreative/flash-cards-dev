@@ -12,6 +12,8 @@
 //filter questions between React, JS, CSS and HTML
 // In one session - if a question has already been asked don't show again.
 
+//https://stackoverflow.com/questions/75974325/how-to-make-hover-work-correct-for-mobile
+
 import { questions } from "./data.js";
 
 const nextQuestionBtn = document.getElementById("next-question-btn");
@@ -35,6 +37,19 @@ nextQuestionBtn.addEventListener("click", () => {
  `;
 
   cardContainer.innerHTML = cardHTML;
+
+  const card = document.getElementById("card");
+
+  let isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints;
+
+  const toggleCard = () => {
+    card.classList.toggle("flipped");
+  };
+
+  if (isTouchDevice) {
+    card.addEventListener("pointerdown", toggleCard);
+    card.addEventListener("pointerup", toggleCard);
+  } else {
+    card.addEventListener("click", toggleCard);
+  }
 });
-nextQuestionBtn.addEventListener("click", showNextQuestion);
-nextQuestionBtn.addEventListener("touchstart", showNextQuestion);
