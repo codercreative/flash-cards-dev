@@ -208,9 +208,9 @@ export const questions = [
     id: 29,
     topic: "JavaScript",
     question:
-      "Can you give an example of generating a string with ES6 Template Literals",
+      "What is a template literal? Can you give an example of generating a string with ES6 template literals",
     answer:
-      "Example: const name = 'John' const greeting = `Hello, my name is ${name}`",
+      "Allow you to interpolate (insert) variables directly within a string. Template literals are denoted with backticks ``, as opposed to single or double quotes. Variables can be passed in to a template literal by surrounding the variable with ${} – the value of the variable will be inserted into the string. Example: const name = 'John' const greeting = `Hello, my name is ${name}`",
   },
   {
     id: 30,
