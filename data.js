@@ -1,6 +1,3 @@
-//https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/main
-//https://blog.hubspot.com/website/javascript-interview-questions
-
 export const questions = [
   {
     id: 1,
