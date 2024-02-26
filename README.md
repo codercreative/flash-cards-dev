@@ -39,7 +39,7 @@ App for junior front end developers to master common coding interview questions 
 
 ### Issues
 
-- Currently, the user can only flip from question to answer on iphones and ipads. I need to make sure that user can flip back from question to answer
+- Currently, the user can only flip from question to answer on iphones and ipads. I need to make sure that user can flip back from answer to question.
 
 ### Resources:
 
