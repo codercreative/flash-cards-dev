@@ -104,7 +104,7 @@ export const questions = [
     topic: "JavaScript",
     question: "What is an object in JavaScript?",
     answer:
-      "An object in JavaScript is a collection of properties containing primitive data types, such as strings, numbers, booleans, and functions. An object can also have other objects as its values. Objects are used to model real-world entities and help organize code into reusable components.They are defined using curly braces '{}' and properties are defined as key-value pairs separated by a colon ':'",
+      "An object in JavaScript is a collection of properties containing primitive data types, such as strings, numbers, booleans, and functions (called methods within an object). An object can also have other objects as its values. Objects are used to model real-world entities and help organize code into reusable components.They are defined using curly braces '{}' and properties are defined as key-value pairs separated by a colon ':'",
   },
   {
     id: 16,
@@ -238,5 +238,33 @@ export const questions = [
       "Can you describe the main difference between the forEach method and the map method and why you would pick one versus the other?",
     answer:
       "forEach: - Executes a provided function once for each array element. It does not create a new array.When you want to perform an action for each element of the array but don't need a new array as a result. map method: - Creates a new array by calling a provided function on each element in the array. A new array containing the results of applying the provided function to each element of the original array. It returns a new array without modifying the original one. When you want to transform each element of the array and create a new array with the transformed values.",
+  },
+  {
+    id: 34,
+    topic: "JavaScript",
+    question: "What is JavaScript?",
+    answer:
+      "JavaScript is a popular web scripting language and is used for client-side and server-side development. The JavaScript code can be inserted into HTML pages that can be understood and executed by web browsers while also supporting object-oriented programming abilities.",
+  },
+  {
+    id: 35,
+    topic: "JavaScript",
+    question: "What are the various data types that exist in JavaScript?",
+    answer:
+      "Primitive Data Types: Number, string, boolean, undefined, null, symbol (added in ECMAScript 6) - represents a unique identifier. Object Data Types: Object (key, value pairs), array, function. Other Data Types: like Set",
+  },
+  {
+    id: 36,
+    topic: "JavaScript",
+    question: "What are some of the built in methods in JavaScript?",
+    answer:
+      "For example: Array methods: push(), pop(), shift(), unshift(), slice(),length. String methods: charAt(), concat(), indexOf(), , toUpperCase(), toLowerCase(). Object methods: Object.keys(), Object.values(), Object.entries(). Math methods: Math.random(), Math.floor(), Math.max(), Math.min()...and many more...",
+  },
+  {
+    id: 37,
+    topic: "JavaScript",
+    question: "What are some of the JavaScript frameworks and their uses?",
+    answer:
+      "React (library developed by Facebook) it enables the creation of reusable UI components and supports a virtual DOM for efficient updates; Angular (developed by Google) it provides a comprehensive framework for building large-scale applications with features like two-way data binding, dependency injection, and modularization.; Vue - known for its simplicity and flexibility, Vue.js is easy to integrate into other projects and allows developers to incrementally adopt its features.",
   },
 ];
