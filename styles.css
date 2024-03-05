@@ -78,6 +78,7 @@ body {
 .front {
   background-color: #3a3a3a;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5em;
