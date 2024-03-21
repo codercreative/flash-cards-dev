@@ -60,7 +60,7 @@ export const questions = [
     topic: "JavaScript",
     question: "Explain the difference between var, let and const",
     answer:
-      "Var is outdated, because it is gloablly scoped and can thus be overwritten. Const and let are  block-scoped -- and let and allows reassignment. Const cannot be reassigned. Preferred usage is to use const, unless you need a variable that will be reassigned then use let.",
+      "Var is outdated, because it is globally scoped and can thus be overwritten. Const and let are  block-scoped -- and let and allows reassignment. Const cannot be reassigned. Preferred usage is to use const, unless you need a variable that will be reassigned then use let.",
   },
   {
     id: 10,
@@ -265,6 +265,28 @@ export const questions = [
     topic: "JavaScript",
     question: "What are some of the JavaScript frameworks and their uses?",
     answer:
-      "React (library developed by Facebook) it enables the creation of reusable UI components and supports a virtual DOM for efficient updates; Angular (developed by Google) it provides a comprehensive framework for building large-scale applications with features like two-way data binding, dependency injection, and modularization.; Vue - known for its simplicity and flexibility, Vue.js is easy to integrate into other projects and allows developers to incrementally adopt its features.",
+      "React (library developed by Facebook) enables the creation of reusable UI components and supports a virtual DOM for efficient updates; Angular (developed by Google) provides a comprehensive framework for building large-scale applications with features like two-way data binding, dependency injection, and modularization.; Vue - is known for its simplicity and flexibility, Vue.js is easy to integrate into other projects and allows developers to incrementally adopt its features.",
+  },
+  {
+    id: 38,
+    topic: "JavaScript",
+    question: "Explain the difference between null and undefined",
+    answer:
+      "Null in JavaScript means an empty value and is also a primitive type in JavaScript (Note: null is a primitive value that represents the intentional absence of any object value, in other words typeof = object). The variable which has been assigned as null contains no value. Undefined, on the other hand, means the variable has been declared, but its value has not been assigned. Use null when you want to represent the intentional absence of a value, and undefined when a variable has not been assigned a value.",
+  },
+  {
+    id: 39,
+    topic: "JavaScript",
+    question:
+      "1) What will be console.logged here: console.log(foo) foo = 1; 2) ...and here:  console.log(foo) var foo = 2; 3) ...and here: foo = 3; console.log(foo); var foo; 4)...and here: function foo() {}",
+    answer:
+      "1) foo is not defined 2) The variable foo is hoisted to the top of its containing scope, but its value is not assigned until the line where it's assigned 2. So, before the assignment, foo holds the value undefined. Therefore, when you log foo, it prints undefined. 3) foo will log 3. 4) it will be hoisted to the top and run anywhere === be sure to include why it is outdated to use var and that let and const variables are used instead (local scoped) to reduce errors",
+  },
+  {
+    id: 40,
+    topic: "JavaScript",
+    question: "How does React handle the rendering of components?",
+    answer:
+      "In React, components represent different parts of the user interface. React handles rendering by utilizing a virtual DOM, which compares changes to the previous version before updating the actual DOM. This process minimizes unnecessary DOM updates, resulting in better performance and a smoother user experience.",
   },
 ];

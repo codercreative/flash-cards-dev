@@ -43,12 +43,14 @@ App for junior front end developers to master common coding interview questions 
 
 ### Resources:
 
-https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/main
+[Github frontend developer interview questions]("https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/main")
 
-https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/javascript.js
+[Awesome cheatsheets]("https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/javascript.js")
 
-https://github.com/sudheerj/javascript-interview-questions
+[Sudheerj's JS interview questions]("https://github.com/sudheerj/javascript-interview-questions")
 
-https://blog.hubspot.com/website/javascript-interview-questions
+[Hubspot JavaScript interview questions]("https://blog.hubspot.com/website/javascript-interview-questions")
 
-https://stackoverflow.com/questions/75974325/how-to-make-hover-work-correct-for-mobile
+[How to make hover work correctly for mobile]("https://stackoverflow.com/questions/75974325/how-to-make-hover-work-correct-for-mobile")
+
+[Frontendeval - practical interview exercises]("https://frontendeval.com/?utm_source=youtube&utm_medium=video&utm_campaign=techrally")
