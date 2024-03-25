@@ -97,7 +97,7 @@ export const questions = [
     topic: "JavaScript",
     question: "What is the difference between == and === in JavaScript?",
     answer:
-      "== loose equal is used to compare two variables regardless of the variable's data type (1 == '1' => true). Whereas === strict equal is used to compare two variables' data type and compare values (1 === '1' => false)",
+      "Loose equality (==) in JavaScript compares two variables regardless of their data types. For example, 1 == '1' would evaluate to true because it only compares the values. On the other hand, strict equality (===) not only compares the values but also ensures that the data types are the same. Therefore, 1 === '1' would evaluate to false because the data types (number and string) are different.",
   },
   {
     id: 15,
@@ -139,7 +139,7 @@ export const questions = [
     topic: "JavaScript",
     question: "What is a closure and how/why would you use one?",
     answer:
-      "In simple terms, closures help you create little bundles of functionality with their own hidden treasures (variables). They're like self-contained worlds where certain information is kept safe and certain tasks can be accomplished. This makes your code more organized, secure, and flexible.",
+      "A closure in JavaScript is when an inner function has access to the variables of its outer function, even after the outer function has finished executing.",
   },
   {
     id: 21,
@@ -199,7 +199,7 @@ export const questions = [
     topic: "JavaScript",
     question: "What is the difference between the slice and splice method?",
     answer:
-      "The slice method returns a shallow copy of a portion of an array into a new array. Does not modify the original array. Takes two optional parameters: start index and end index (end index is exclusive). The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements.Modifies the original array. Takes three parameters: start index, number of elements to remove, and optional elements to add.",
+      "The slice method in JavaScript returns a shallow copy of a specified portion of an array into a new array without modifying the original array. It accepts two optional parameters: the start index and the end index (where the end index is exclusive). In contrast, the splice method changes the contents of an array by removing or replacing existing elements and optionally adding new elements. Unlike slice, splice modifies the original array. It takes three parameters: the start index, the number of elements to remove, and optional elements to add.",
   },
   {
     id: 29,
@@ -214,13 +214,13 @@ export const questions = [
     topic: "JavaScript",
     question: "What is a higher order function?",
     answer:
-      "A higher order function is a function that takes one or more functions as arguments, or returns a function as its result. There are several different types of higher order functions like map and reduce.",
+      "It is a function that takes one or more functions as arguments, or returns a function as its result. There are several different types of higher order functions like map and reduce.",
   },
   {
     id: 31,
     topic: "JavaScript",
     question:
-      "What is a Ternary operator and what does the word Ternary indicate?",
+      "What is a ternary operator and what does the word ternary indicate?",
     answer:
       "A ternary operator is a shorthand way of expressing a simple if-else statement in programming. The term 'ternary' indicates that this operator takes three operands. It's also known as the conditional operator. The syntax for the ternary operator is as follows: const result = (x > 0) ? 'Yes' : 'No';",
   },
@@ -288,5 +288,104 @@ export const questions = [
     question: "How does React handle the rendering of components?",
     answer:
       "In React, components represent different parts of the user interface. React handles rendering by utilizing a virtual DOM, which compares changes to the previous version before updating the actual DOM. This process minimizes unnecessary DOM updates, resulting in better performance and a smoother user experience.",
+  },
+  {
+    id: 41,
+    topic: "JavaScript",
+    question:
+      "Imagine you're working on a web application where you have a form submission event triggered by a button click. You've come across the e.preventDefault() method being used in the event handler function. Can you explain what e.preventDefault() does?",
+    answer:
+      "e.preventDefault() is a method in JavaScript that prevents the default action associated with an event from occurring. In the context of form submission triggered by a button click, e.preventDefault() can be used to stop the default behavior of the browser, which is to submit the form and reload the page.",
+  },
+  {
+    id: 42,
+    topic: "JavaScript",
+    question: "What is currying in JavaScript?",
+    answer:
+      "Currying in JavaScript is a functional programming concept where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument",
+  },
+  {
+    id: 43,
+    topic: "Software development practice",
+    question:
+      "What is accessibility and why is it important? What are some techniquess for improving accessibility?",
+    answer:
+      "Accessibility refers to the practice of ensuring that websites and web applications are usable by people with disabilities. Techniques for enhancing accessibility are: Using semantic HTML tags, making sure that all functionality can be accessed by keyboard alone, setting alt text for images, using sufficient color contrast to ensure readability, making forms accessible with labels, legends, fieldsets; ensuring responsive design, etc.",
+  },
+  {
+    id: 44,
+    topic: "Software development practice",
+    question: "What is responsive web design and why is it important?",
+    answer:
+      "Responsive web design ensures websites adapt to various devices and screen sizes, optimizing viewing and interaction experiences. It's crucial as it enhances user experience, accessibility, and SEO performance. Media queries play a pivotal role in responsive design, allowing styles to be adjusted based on device characteristics. Techniques like flexbox, grid layout, and fluid typography further aid in creating flexible and scalable layouts. Conditional loading with JavaScript optimizes performance by selectively loading assets based on device capabilities. Overall, responsive web design is essential for providing a seamless and inclusive browsing experience across a diverse range of devices.",
+  },
+  {
+    id: 45,
+    topic: "Software development practice",
+    question:
+      "What is version control, and why is it important in software development?",
+    answer:
+      "Version control, exemplified by tools like Git, is a system that tracks changes to files over time, enabling multiple contributors to collaborate on a project concurrently. It's critical in software development for preserving a chronological record of alterations, fostering collaboration among team members, and facilitating seamless rollback to previous versions in case of errors or necessary changes.",
+  },
+  {
+    id: 46,
+    topic: "Software development practice",
+    question:
+      "What techniques can you employ to optimize the performance of a web application?",
+    answer:
+      "To optimize web application performance, techniques such as minification and compression of files, caching strategies, image optimization, reducing server requests, and asynchronous loading of resources can be employed. Additionally, implementing lazy loading, which defers the loading of non-critical resources until they are needed, can significantly improve page load times. These approaches help decrease load times and improve overall user experience.",
+  },
+  {
+    id: 47,
+    topic: "JavaScript",
+    question:
+      "What are promises in JavaScript, and how do they help in asynchronous programming?",
+    answer:
+      "Promises are objects that represent the eventual completion or failure of an asynchronous operation. They help in asynchronous programming by providing a more organized way to handle asynchronous tasks.",
+  },
+  {
+    id: 48,
+    topic: "JavaScript",
+    question: "How do you handle errors in JavaScript?",
+    answer:
+      "Errors in JavaScript can be handled using try...catch blocks. Code that might throw an error is placed within the try block, and any potential errors are caught and handled in the catch block.",
+  },
+  {
+    id: 49,
+    topic: "JavaScript",
+    question:
+      "How do you access and manipulate elements in the DOM using JavaScript?",
+    answer:
+      "Elements in the DOM can be accessed and manipulated using JavaScript methods such as getElementById, querySelector, innerHTML, setAttribute, addEventListener, etc.",
+  },
+  {
+    id: 50,
+    topic: "JavaScript",
+    question: "Explain the difference between localStorage and sessionStorage.",
+    answer:
+      "localStorage and sessionStorage are both web storage APIs used to store data locally in the user's browser. The main difference is that localStorage persists even after the browser is closed, while sessionStorage is cleared when the browser session ends.",
+  },
+  {
+    id: 51,
+    topic: "Security",
+    question: "What is CORS, and why is it important in web development?",
+    answer:
+      "CORS (Cross-Origin Resource Sharing) is a security feature implemented by browsers that controls access to resources on a different origin (domain). It's important in web development as it helps prevent malicious attacks by enforcing restrictions on cross-origin requests, ensuring the security of web applications.",
+  },
+  {
+    id: 52,
+    topic: "Security",
+    question:
+      "What are some common security vulnerabilities in web applications, and how can they be mitigated?",
+    answer:
+      "Common security vulnerabilities include Cross-Site Scripting (XSS), SQL Injection, Cross-Site Request Forgery (CSRF), etc. They can be mitigated by implementing proper input validation, using parameterized queries, securing sensitive data, and keeping software up-to-date with security patches.",
+  },
+  {
+    id: 53,
+    topic: "Software development practice",
+    question:
+      "How would you use browser developer tools to debug JavaScript code?",
+    answer:
+      "Browser developer tools, such as those found in Chrome or Firefox, offer a range of features to debug JavaScript code. To start debugging, you can open the developer tools by pressing F12 or right-clicking on the webpage and selecting 'Inspect'. Within the developer tools, you can navigate to the 'Sources' tab to view and debug JavaScript files. Here, you can set breakpoints by clicking on the line number to pause code execution at specific points, inspect variable values, step through code execution line by line, and monitor network activity. These tools help identify and fix errors, optimize code performance, and enhance overall development efficiency.",
   },
 ];

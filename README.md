@@ -23,17 +23,16 @@ App for junior front end developers to master common coding interview questions 
 - Listen for click on button to pull question from data.js
 - Display question on front
 - When user hovers on question, flip card to answer on back
-- The card should be big enough to hold the questions and answers
+- The card should be large enough to contain the questions and answers
 - Make sure the contrast is ok
 
 ### Would like to add or change...
 
-- Need a start page
 - Add more questions and double-check all answers
 - Include a reset button
 - Include a navigation to show what the game is about...
-- Include button to filter questions between React, JS, CSS and HTML
-- If a question has already been asked don't show again.
+- Include button to filter questions between React, JS, CSS and HTML, etc.
+- Include a button to filter questions that have already been asked
 - If the question was hard, then show it again to enhance memorization
 - Consider building the app in React instead
 
