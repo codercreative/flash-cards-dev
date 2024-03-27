@@ -20,21 +20,57 @@ App for junior front end developers to master common coding interview questions 
 
 ### So far the app includes...
 
-- Listen for click on button to pull question from data.js
-- Display question on front
+- Click on button to pull question from data.js
+- Display question
 - When user hovers on question, flip card to answer on back
 - The card should be large enough to contain the questions and answers
 - Make sure the contrast is ok
 
 ### Would like to add or change...
 
-- Add more questions and double-check all answers
+- Add more questions and double-check all answers are correct
 - Include a reset button
-- Include a navigation to show what the game is about...
-- Include button to filter questions between React, JS, CSS and HTML, etc.
+- Include information about what the game is about...
+- Include buttons to filter questions between React, JS, CSS and HTML, etc.
 - Include a button to filter questions that have already been asked
-- If the question was hard, then show it again to enhance memorization
-- Consider building the app in React instead
+- Build the app in React instead
+- Make it into a multiple choice app
+
+### Code highlights
+
+Excerpt of card flip code in CSS. And then you toggle "flipped" on the card in JavaScript;
+
+```css
+.card {
+...
+ /* flipping action */
+ transition: transform 1500ms;
+ /* treat as a 3D object and properly flip card
+-- used in combination with rotateY*/
+ transform-style: preserve-3d;
+}
+
+.card:hover,
+ /* flipped is added as a class to card in CSS - it is not in the HTML code */
+.card.flipped {
+ transform: rotateY(180deg);
+}
+
+.front,
+.back {
+...
+ backface-visibility: hidden;
+}
+
+.front {
+ display: flex;
+}
+
+.back {
+ transform: rotateY(180deg);
+ display: flex;
+}
+```
 
 ### Issues
 
